@@ -1,0 +1,33 @@
+{
+  "Terem": {
+    "kizarolagos": [
+      "kosárlabda lány",
+      "kosárlabda fiú",
+      "kézilabda"
+    ],
+
+    "egyutt_mehet": [
+      ["torna lány", "röplabda fiú"],
+      ["torna lány", "röplabda lány 1"],
+      ["torna lány", "röplabda lány 2"],
+
+      ["torna fiú", "röplabda fiú"],
+      ["torna fiú", "röplabda lány 1"],
+      ["torna fiú", "röplabda lány 2"]
+    ],
+
+    "max_parhuzamos": 2
+  },
+
+  "Kondi": {
+    "max_parhuzamos": 1
+  },
+
+  "Uszoda": {
+    "max_parhuzamos": 2
+  },
+
+  "Külső helyszín": {
+    "max_parhuzamos": 99
+  }
+}

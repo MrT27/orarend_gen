@@ -1,0 +1,164 @@
+{
+  "foglalkozasok": [
+    {
+      "id": "F001",
+      "tanar": "UT",
+      "sport": "úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "F002",
+      "tanar": "SZS",
+      "sport": "röplabda fiú",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F003",
+      "tanar": "SZZS",
+      "sport": "röplabda lány 1",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F004",
+      "tanar": "SZZS",
+      "sport": "röplabda lány 2",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F005",
+      "tanar": "SZZS",
+      "sport": "atlétika",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F006",
+      "tanar": "RM",
+      "sport": "torna lány",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F007",
+      "tanar": "RM",
+      "sport": "kosárlabda lány",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F008",
+      "tanar": "SZS",
+      "sport": "kondi 1",
+      "helyszin": "Kondi"
+    },
+    {
+      "id": "F009",
+      "tanar": "KK",
+      "sport": "kondi 2",
+      "helyszin": "Kondi"
+    },
+    {
+      "id": "F010",
+      "tanar": "KK",
+      "sport": "kondi 3",
+      "helyszin": "Kondi"
+    },
+    {
+      "id": "F011",
+      "tanar": "KSZJ",
+      "sport": "torna fiú",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F012",
+      "tanar": "SZS",
+      "sport": "tollaslabda",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F013",
+      "tanar": "UT",
+      "sport": "labdarúgás",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F014",
+      "tanar": "KSZJ",
+      "sport": "kosárlabda fiú",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F015",
+      "tanar": "SZS",
+      "sport": "kézilabda",
+      "helyszin": "Terem"
+    },
+    {
+      "id": "F016",
+      "tanar": "Külsős",
+      "sport": "külsős edzés 1",
+      "helyszin": "Terem",
+      "kulso": true
+    },
+    {
+      "id": "F017",
+      "tanar": "Külsős",
+      "sport": "külsős edzés 2",
+      "helyszin": "Terem",
+      "kulso": true
+    },
+    {
+      "id": "F018",
+      "tanar": "FL",
+      "sport": "Aikido",
+      "helyszin": "Tatamis"
+    },
+
+    {
+      "id": "U001",
+      "tipus": "kötelező úszás",
+      "csoport": "10GA lány test",
+      "tanar": "SZJ",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U002",
+      "tipus": "kötelező úszás",
+      "csoport": "10GAB fiú test",
+      "tanar": "KK",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U003",
+      "tipus": "kötelező úszás",
+      "csoport": "10GB lány test",
+      "tanar": "RM",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U004",
+      "tipus": "kötelező úszás",
+      "csoport": "10TAD fiú test",
+      "tanar": "KK",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U005",
+      "tipus": "kötelező úszás",
+      "csoport": "10TAD lány test",
+      "tanar": "SZJ",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U006",
+      "tipus": "kötelező úszás",
+      "csoport": "10TBC fiú test 1",
+      "tanar": "UT",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    }
+
+  ]
+}

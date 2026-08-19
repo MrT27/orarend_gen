@@ -1,0 +1,54 @@
+{
+  "korlatozasok": [
+
+    {
+      "tipus": "tanar",
+      "tanar": "KK",
+      "nap": "Szerda",
+      "idosav": "14:30-16:00"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZZS",
+      "nap": "Péntek",
+      "idosav": "*"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZS",
+      "nap": "Péntek",
+      "idosav": "*"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "RM",
+      "nap": "Szerda",
+      "idosav": "14:30-16:00"
+    },
+
+    {
+      "tipus": "sport",
+      "sport": "kötelező úszás",
+      "nap": "Szerda",
+      "idosav": "*"
+    },
+    {
+      "tipus": "sport",
+      "sport": "kötelező úszás",
+      "nap": "Péntek",
+      "idosav": "*"
+    },
+    {
+      "tipus": "sport",
+      "sport": "kötelező úszás",
+      "nap": "*",
+      "idosav": "16:00-17:30"
+    },
+    {
+      "tipus": "sport",
+      "sport": "kötelező úszás",
+      "nap": "*",
+      "idosav": "17:30-19:00"
+    }
+  ]
+}

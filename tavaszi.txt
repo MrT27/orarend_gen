@@ -1,0 +1,16 @@
+,   {
+      "id": "U007",
+      "tipus": "kötelező úszás",
+      "csoport": "10TBC fiú test 2",
+      "tanar": "KK",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    },
+    {
+      "id": "U008",
+      "tipus": "kötelező úszás",
+      "csoport": "10TBC lány test",
+      "tanar": "RM",
+      "sport": "kötelező úszás",
+      "helyszin": "Uszoda"
+    }
