@@ -1,0 +1,9 @@
+services:
+  orarend-gen:
+    build: .
+    container_name: orarend-gen
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
