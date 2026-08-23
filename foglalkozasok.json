@@ -110,6 +110,18 @@
       "sport": "Aikido",
       "helyszin": "Tatamis"
     },
+    {
+      "id": "F019",
+      "tanar": "RM",
+      "sport": "Gyógytestnevelés",
+      "helyszin": "Pince"
+    },
+    {
+      "id": "F019",
+      "tanar": "RM",
+      "sport": "Gyógytestnevelés Gyógyúszás",
+      "helyszin": "Uszoda"
+    },
 
     {
       "id": "U001",

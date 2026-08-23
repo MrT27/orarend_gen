@@ -15,6 +15,42 @@
     },
     {
       "tipus": "tanar",
+      "tanar": "SZZS",
+      "nap": "Kedd",
+      "idosav": "14:30-16:00"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZZS",
+      "nap": "Szerda",
+      "idosav": "14:30-16:00"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZZS",
+      "nap": "Csütörtök",
+      "idosav": "14:30-16:00"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZS",
+      "nap": "Kedd",
+      "idosav": "16:00-17:30"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZS",
+      "nap": "Szerda",
+      "idosav": "16:00-17:30"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "SZS",
+      "nap": "Csütörtök",
+      "idosav": "16:00-17:30"
+    },
+    {
+      "tipus": "tanar",
       "tanar": "SZS",
       "nap": "Péntek",
       "idosav": "*"
@@ -49,6 +85,24 @@
       "sport": "kötelező úszás",
       "nap": "*",
       "idosav": "17:30-19:00"
-    }
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "*",
+      "nap": "Péntek",
+      "idosav": "16:00-17:30"
+    },
+    {
+      "tipus": "tanar",
+      "tanar": "*",
+      "nap": "Péntek",
+      "idosav": "17:30-19:00"
+    },
+    {
+  "tipus": "helyszin",
+  "helyszin": "Terem",
+  "nap": "Péntek",
+  "idosav": "17:30-19:00"
+}
   ]
 }

@@ -50,14 +50,6 @@
     "idosav": "14:30-16:00"
   },
   {
-    "id": "F018",
-    "tanar": "FL",
-    "sport": "Aikido",
-    "helyszin": "Tatamis",
-    "nap": "Hétfő",
-    "idosav": "14:30-16:00"
-  },
-  {
     "id": "U005",
     "tipus": "kötelező úszás",
     "csoport": "10TAD lány test",
@@ -65,6 +57,14 @@
     "sport": "kötelező úszás",
     "helyszin": "Uszoda",
     "nap": "Csütörtök",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F018",
+    "tanar": "FL",
+    "sport": "Aikido",
+    "helyszin": "Tatamis",
+    "nap": "Hétfő",
     "idosav": "14:30-16:00"
   },
   {
@@ -76,23 +76,6 @@
     "idosav": "14:30-16:00"
   },
   {
-    "id": "F008",
-    "tanar": "SZS",
-    "sport": "kondi 1",
-    "helyszin": "Kondi",
-    "nap": "Hétfő",
-    "idosav": "16:00-17:30"
-  },
-
-  {
-    "id": "F001",
-    "tanar": "UT",
-    "sport": "úszás",
-    "helyszin": "Uszoda",
-    "nap": "Hétfő",
-    "idosav": "16:00-17:30"
-  },
-  {
     "id": "F003",
     "tanar": "SZZS",
     "sport": "röplabda lány 1",
@@ -101,11 +84,69 @@
     "idosav": "16:00-17:30"
   },
   {
+    "id": "F001",
+    "tanar": "UT",
+    "sport": "úszás",
+    "helyszin": "Uszoda",
+    "nap": "Szerda",
+    "idosav": "16:00-17:30"
+  },
+  {
     "id": "F004",
     "tanar": "SZZS",
     "sport": "röplabda lány 2",
     "helyszin": "Terem",
-    "nap": "Hétfő",
+    "nap": "Szerda",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F009",
+    "tanar": "KK",
+    "sport": "kondi 2",
+    "helyszin": "Kondi",
+    "nap": "Kedd",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F016",
+    "tanar": "Külsős",
+    "sport": "külsős edzés 1",
+    "helyszin": "Terem",
+    "kulso": true,
+    "nap": "Szerda",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F017",
+    "tanar": "Külsős",
+    "sport": "külsős edzés 2",
+    "helyszin": "Terem",
+    "kulso": true,
+    "nap": "Péntek",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F013",
+    "tanar": "UT",
+    "sport": "labdarúgás",
+    "helyszin": "Terem",
+    "nap": "Szerda",
     "idosav": "17:30-19:00"
+  },
+  {
+    "id": "F006",
+    "tanar": "RM",
+    "sport": "torna lány",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F011",
+    "tanar": "KSZJ",
+    "sport": "torna fiú",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "16:00-17:30"
   }
 ]

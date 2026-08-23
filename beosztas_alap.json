@@ -49,7 +49,7 @@
     "nap": "Csütörtök",
     "idosav": "14:30-16:00"
   },
-  {
+   {
     "id": "F018",
     "tanar": "FL",
     "sport": "Aikido",
@@ -66,46 +66,5 @@
     "helyszin": "Uszoda",
     "nap": "Csütörtök",
     "idosav": "14:30-16:00"
-  },
-  {
-    "id": "F002",
-    "tanar": "SZS",
-    "sport": "röplabda fiú",
-    "helyszin": "Terem",
-    "nap": "Hétfő",
-    "idosav": "14:30-16:00"
-  },
-  {
-    "id": "F008",
-    "tanar": "SZS",
-    "sport": "kondi 1",
-    "helyszin": "Kondi",
-    "nap": "Hétfő",
-    "idosav": "16:00-17:30"
-  },
-
-  {
-    "id": "F001",
-    "tanar": "UT",
-    "sport": "úszás",
-    "helyszin": "Uszoda",
-    "nap": "Hétfő",
-    "idosav": "16:00-17:30"
-  },
-  {
-    "id": "F003",
-    "tanar": "SZZS",
-    "sport": "röplabda lány 1",
-    "helyszin": "Terem",
-    "nap": "Hétfő",
-    "idosav": "16:00-17:30"
-  },
-  {
-    "id": "F004",
-    "tanar": "SZZS",
-    "sport": "röplabda lány 2",
-    "helyszin": "Terem",
-    "nap": "Hétfő",
-    "idosav": "17:30-19:00"
   }
 ]

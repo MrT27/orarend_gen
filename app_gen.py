@@ -45,6 +45,9 @@ ALAP_TEREM_SZABALYOK = {
     "Uszoda": {
         "max_parhuzamos": 2,
     },
+    "Tatami": {
+        "max_parhuzamos": 1,
+    },
     "Külső helyszín": {
         "max_parhuzamos": 99,
     },
@@ -263,7 +266,7 @@ def tanar_korlatozva(tanar, nap, idosav):
     )
 
     for korlat in szabalyok:
-        if korlat.get("tanar") != tanar:
+        if korlat.get("tanar") not in ("*", tanar):
             continue
 
         if not mezo_egyezik(
@@ -319,6 +322,38 @@ def sport_korlatozva(sport, nap, idosav):
 
 
 # ============================================================
+# HELYSZÍNKORLÁTOZÁS
+# ============================================================
+
+def helyszin_korlatozva(helyszin, nap, idosav):
+    for korlat in KORLATOZASOK:
+        if korlat.get("tipus") != "helyszin":
+            continue
+
+        if korlat.get("helyszin") not in ("*", helyszin):
+            continue
+
+        if not mezo_egyezik(
+            korlat.get("nap", "*"),
+            nap,
+        ):
+            continue
+
+        if not mezo_egyezik(
+            korlat.get("idosav", "*"),
+            idosav,
+        ):
+            continue
+
+        return True, korlat.get(
+            "ok",
+            "Helyszínkorlátozás",
+        )
+
+    return False, ""
+
+
+# ============================================================
 # HELYSZÍN / TEREM
 # ============================================================
 
@@ -355,10 +390,6 @@ def helyszin_engedelyezett(
 ):
     helyszin = foglalkozas["helyszin"]
     sport = foglalkozas["sport"]
-
-    # Külsős edzés nem terheli az iskola termeit.
-    if foglalkozas.get("kulso", False):
-        return True, ""
 
     bent = helyszinen_beosztva(
         nap,
@@ -446,6 +477,15 @@ def idopont_ervenyes(
 
     tiltott, ok = sport_korlatozva(
         sport,
+        nap,
+        idosav,
+    )
+
+    if tiltott:
+        hibak.append(ok)
+
+    tiltott, ok = helyszin_korlatozva(
+        foglalkozas["helyszin"],
         nap,
         idosav,
     )

@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import pandas as pd
 import streamlit as st
 
 # ============================================================
@@ -41,6 +42,9 @@ ALAP_TEREM_SZABALYOK = {
     },
     "Uszoda": {
         "max_parhuzamos": 2
+    },
+    "Tatami": {
+        "max_parhuzamos": 1
     },
     "Külső helyszín": {
         "max_parhuzamos": 99
@@ -183,12 +187,20 @@ def hatralevo_foglalkozasok():
 
 
 def foglalkozas_cimke(foglalkozas):
-    return (
-        f"{foglalkozas['id']} | "
-        f"{foglalkozas['tanar']} | "
-        f"{foglalkozas['sport']} | "
-        f"{foglalkozas['helyszin']}"
-    )
+    reszek = [
+        foglalkozas.get("id", "?"),
+        foglalkozas.get("tanar", "?"),
+    ]
+
+    if foglalkozas.get("csoport"):
+        reszek.append(foglalkozas.get("csoport"))
+
+    reszek.extend([
+        foglalkozas.get("sport", "?"),
+        foglalkozas.get("helyszin", "?"),
+    ])
+
+    return " | ".join(reszek)
 
 
 def osszes_tanar():
@@ -264,7 +276,7 @@ def tanar_korlatozva(tanar, nap, idosav):
     )
 
     for korlat in szabalyok:
-        if korlat.get("tanar") != tanar:
+        if korlat.get("tanar") not in ("*", tanar):
             continue
 
         if not mezo_egyezik(
@@ -323,6 +335,34 @@ def sport_korlatozva(sport, nap, idosav):
 # HELYSZÍN / TEREM TERHELHETŐSÉG
 # ============================================================
 
+def helyszin_korlatozva(helyszin, nap, idosav):
+    for korlat in KORLATOZASOK:
+        if korlat.get("tipus") != "helyszin":
+            continue
+
+        if korlat.get("helyszin") not in ("*", helyszin):
+            continue
+
+        if not mezo_egyezik(
+            korlat.get("nap", "*"),
+            nap,
+        ):
+            continue
+
+        if not mezo_egyezik(
+            korlat.get("idosav", "*"),
+            idosav,
+        ):
+            continue
+
+        return True, korlat.get(
+            "ok",
+            "Helyszínkorlátozás",
+        )
+
+    return False, ""
+
+
 def helyszinen_beosztva(nap, idosav, helyszin):
     return [
         sor
@@ -351,10 +391,6 @@ def par_engedelyezett(sport1, sport2, egyutt_mehet):
 def helyszin_engedelyezett(foglalkozas, nap, idosav):
     helyszin = foglalkozas["helyszin"]
     sport = foglalkozas["sport"]
-
-    # Külsős edzések nem terhelik az iskola termeit.
-    if foglalkozas.get("kulso", False):
-        return True, ""
 
     bent = helyszinen_beosztva(
         nap,
@@ -443,6 +479,15 @@ def idopont_ervenyes(foglalkozas, nap, idosav):
         sport,
         nap,
         idosav
+    )
+
+    if tiltott:
+        hibak.append(ok)
+
+    tiltott, ok = helyszin_korlatozva(
+        foglalkozas["helyszin"],
+        nap,
+        idosav,
     )
 
     if tiltott:
@@ -597,6 +642,44 @@ def terem_terheles_tabla(nap):
         tabla.append(sor)
 
     return tabla
+
+
+# ============================================================
+# TÁBLÁZAT SZÍNEZÉS
+# ============================================================
+
+def terheltseg_stilus(tabla):
+    """
+    Halvány zöld:
+      - SZABAD
+
+    Halvány narancs:
+      - TILTOTT / NEM ÉR RÁ
+      - már foglalt időpontok
+    """
+
+    df = pd.DataFrame(tabla)
+
+    def cella_szin(ertek):
+        szoveg = str(ertek).strip()
+
+        if szoveg.startswith("SZABAD"):
+            return "background-color: #e8f5e9;"
+
+        if (
+            szoveg == "TILTOTT"
+            or szoveg == "NEM ÉR RÁ"
+        ):
+            return "background-color: #fff3e0;"
+
+        # A Nap oszlopot és az üres cellákat nem színezzük.
+        if szoveg in NAPOK or not szoveg:
+            return ""
+
+        # Minden tényleges foglalkozás foglalt időpont.
+        return "background-color: #fff3e0;"
+
+    return df.style.map(cella_szin)
 
 
 # ============================================================
@@ -869,8 +952,10 @@ kivalasztott_tanar = st.selectbox(
 )
 
 st.dataframe(
-    egy_tanar_terheles_tabla(
-        kivalasztott_tanar
+    terheltseg_stilus(
+        egy_tanar_terheles_tabla(
+            kivalasztott_tanar
+        )
     ),
     use_container_width=True,
     hide_index=True
@@ -916,9 +1001,18 @@ def egy_helyszin_terheles_tabla(helyszin):
 
             if not talalatok:
 
-                sor[idosav] = (
-                    f"SZABAD (0/{max_parhuzamos})"
+                korlatozott, _ = helyszin_korlatozva(
+                    helyszin,
+                    nap,
+                    idosav
                 )
+
+                if korlatozott:
+                    sor[idosav] = "TILTOTT"
+                else:
+                    sor[idosav] = (
+                        f"SZABAD (0/{max_parhuzamos})"
+                    )
 
             else:
 
@@ -975,8 +1069,10 @@ kivalasztott_helyszin = st.selectbox(
 )
 
 st.dataframe(
-    egy_helyszin_terheles_tabla(
-        kivalasztott_helyszin
+    terheltseg_stilus(
+        egy_helyszin_terheles_tabla(
+            kivalasztott_helyszin
+        )
     ),
     use_container_width=True,
     hide_index=True

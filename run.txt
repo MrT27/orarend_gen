@@ -1,2 +1,2 @@
 cd /Users/ungitamas/Desktop/Orarend_gen
-python3 -m streamlit run app.py
+python3 -m streamlit run app_kezi.py
