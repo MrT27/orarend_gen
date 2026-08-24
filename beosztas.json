@@ -57,9 +57,6 @@
     "nap": "Hétfő",
     "idosav": "14:30-16:00"
   },
-
-
-
   {
     "id": "U005",
     "tipus": "kötelező úszás",
@@ -86,7 +83,6 @@
     "nap": "Hétfő",
     "idosav": "16:00-17:30"
   },
-
   {
     "id": "F001",
     "tanar": "UT",
@@ -109,6 +105,70 @@
     "sport": "röplabda lány 2",
     "helyszin": "Terem",
     "nap": "Hétfő",
+    "idosav": "17:30-19:00"
+  },
+  {
+    "id": "F015",
+    "tanar": "SZS",
+    "sport": "kézilabda",
+    "helyszin": "Terem",
+    "nap": "Kedd",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F007",
+    "tanar": "RM",
+    "sport": "kosárlabda lány",
+    "helyszin": "Terem",
+    "nap": "Kedd",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F014",
+    "tanar": "KSZJ",
+    "sport": "kosárlabda fiú",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F012",
+    "tanar": "SZS",
+    "sport": "tollaslabda",
+    "helyszin": "Terem",
+    "nap": "Szerda",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F005",
+    "tanar": "SZZS",
+    "sport": "atlétika",
+    "helyszin": "Terem",
+    "nap": "Szerda",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F006",
+    "tanar": "RM",
+    "sport": "torna lány",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F011",
+    "tanar": "KSZJ",
+    "sport": "torna fiú",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F013",
+    "tanar": "UT",
+    "sport": "labdarúgás",
+    "helyszin": "Terem",
+    "nap": "Kedd",
     "idosav": "17:30-19:00"
   }
 ]
