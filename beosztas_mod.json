@@ -1,5 +1,15 @@
 [
   {
+    "id": "U006",
+    "tipus": "kötelező úszás",
+    "csoport": "10TBC fiú test 1",
+    "tanar": "UT",
+    "sport": "kötelező úszás",
+    "helyszin": "Uszoda",
+    "nap": "Hétfő",
+    "idosav": "14:30-16:00"
+  },
+  {
     "id": "U004",
     "tipus": "kötelező úszás",
     "csoport": "10TAD fiú test",
@@ -66,28 +76,20 @@
     "idosav": "14:30-16:00"
   },
   {
+    "id": "F008",
+    "tanar": "SZS",
+    "sport": "kondi 1",
+    "helyszin": "Kondi",
+    "nap": "Hétfő",
+    "idosav": "16:00-17:30"
+  },
+  {
     "id": "F001",
     "tanar": "UT",
     "sport": "úszás",
     "helyszin": "Uszoda",
     "nap": "Hétfő",
     "idosav": "16:00-17:30"
-  },
-  {
-    "id": "F011",
-    "tanar": "KSZJ",
-    "sport": "torna fiú",
-    "helyszin": "Terem",
-    "nap": "Csütörtök",
-    "idosav": "16:00-17:30"
-  },
-  {
-    "id": "F014",
-    "tanar": "KSZJ",
-    "sport": "kosárlabda fiú",
-    "helyszin": "Terem",
-    "nap": "Csütörtök",
-    "idosav": "14:30-16:00"
   },
   {
     "id": "F003",
@@ -98,49 +100,41 @@
     "idosav": "16:00-17:30"
   },
   {
-    "id": "F007",
-    "tanar": "RM",
-    "sport": "kosárlabda lány",
-    "helyszin": "Terem",
-    "nap": "Péntek",
-    "idosav": "14:30-16:00"
-  },
-  {
     "id": "F004",
     "tanar": "SZZS",
     "sport": "röplabda lány 2",
     "helyszin": "Terem",
-    "nap": "Szerda",
-    "idosav": "16:00-17:30"
+    "nap": "Hétfő",
+    "idosav": "17:30-19:00"
   },
   {
-    "id": "F009",
-    "tanar": "KK",
-    "sport": "kondi 2",
-    "helyszin": "Kondi",
+    "id": "F015",
+    "tanar": "SZS",
+    "sport": "kézilabda",
+    "helyszin": "Terem",
     "nap": "Kedd",
     "idosav": "14:30-16:00"
   },
   {
-    "id": "F010",
-    "tanar": "KK",
-    "sport": "kondi 3",
-    "helyszin": "Kondi",
-    "nap": "Szerda",
+    "id": "F007",
+    "tanar": "RM",
+    "sport": "kosárlabda lány",
+    "helyszin": "Terem",
+    "nap": "Kedd",
+    "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F014",
+    "tanar": "KSZJ",
+    "sport": "kosárlabda fiú",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
     "idosav": "16:00-17:30"
   },
   {
     "id": "F012",
     "tanar": "SZS",
     "sport": "tollaslabda",
-    "helyszin": "Terem",
-    "nap": "Kedd",
-    "idosav": "14:30-16:00"
-  },
-  {
-    "id": "F015",
-    "tanar": "SZS",
-    "sport": "kézilabda",
     "helyszin": "Terem",
     "nap": "Szerda",
     "idosav": "14:30-16:00"
@@ -150,7 +144,7 @@
     "tanar": "SZZS",
     "sport": "atlétika",
     "helyszin": "Terem",
-    "nap": "Kedd",
+    "nap": "Szerda",
     "idosav": "16:00-17:30"
   },
   {
@@ -159,6 +153,22 @@
     "sport": "torna lány",
     "helyszin": "Terem",
     "nap": "Csütörtök",
-    "idosav": "16:00-17:30"
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F011",
+    "tanar": "KSZJ",
+    "sport": "torna fiú",
+    "helyszin": "Terem",
+    "nap": "Csütörtök",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F013",
+    "tanar": "UT",
+    "sport": "labdarúgás",
+    "helyszin": "Terem",
+    "nap": "Kedd",
+    "idosav": "17:30-19:00"
   }
 ]

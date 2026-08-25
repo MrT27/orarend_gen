@@ -1,2 +1,4 @@
 cd /Users/ungitamas/Desktop/Orarend_gen
 python3 -m streamlit run app_kezi.py
+
+& "$env:LOCALAPPDATA\Programs\Python\Python314\python.exe" -m streamlit run app_kezi.py
