@@ -160,5 +160,31 @@
     "helyszin": "Terem",
     "nap": "Csütörtök",
     "idosav": "16:00-17:30"
+  },
+  {
+    "id": "F008",
+    "tanar": "SZZS",
+    "sport": "kondi 1",
+    "helyszin": "Kondi",
+    "nap": "Hétfő",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "U006",
+    "tipus": "kötelező úszás",
+    "csoport": "10TBC fiú test 1",
+    "tanar": "UT",
+    "sport": "kötelező úszás",
+    "helyszin": "Uszoda",
+    "nap": "Hétfő",
+    "idosav": "14:30-16:00"
+  },
+  {
+    "id": "F013",
+    "tanar": "UT",
+    "sport": "labdarúgás",
+    "helyszin": "Terem",
+    "nap": "Szerda",
+    "idosav": "17:30-19:00"
   }
 ]
